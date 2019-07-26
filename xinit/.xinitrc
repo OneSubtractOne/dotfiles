@@ -47,17 +47,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
-#/home/sifr/.screenlayout/layout.sh &
-#sleep 5
+
 compton -b & 
 lxqt-notificationd &
 ckb-next &
 steam &
 nextcloud &
 protonmail-bridge &
-#/usr/bin/aa-notify -p -s 1 -w 60 -f /var/log/audit/audit.log &
-#feh --bg-scale ~/Pictures/wallpaper/dracula/black-glow-hexagon-white-purple-gradient-1920x1080-c4-000000-ffffff-8a2be2-000000-l2-10-132-a-15-f-6.jpg &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
-#exec herbstluftwm
-feh --bg-scale ~/walls/48e390cbf2020d70cedcaa41827941e420b2d7fb.png
+feh --bg-scale ~/Pictures/DTjS4mD.png &
+pasystray &
 exec dwm
