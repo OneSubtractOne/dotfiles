@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 #eval `dircolors /home/sifr/builds/dircolors-solarized/dircolors.256dark`
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export PATH=$PATH:/home/sifr/bin
@@ -19,7 +20,7 @@ source /usr/share/bash-completion/bash_completion
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
-#alias tmux='tmux -2'
+alias tmux='tmux -2'
 #alias ascendio='bb-wrapper -Syu --aur'
 #alias accio='bb-wrapper -S --aur '
 #alias erised='bb-wrapper -Ss --aur '

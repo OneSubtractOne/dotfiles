@@ -1,0 +1,8 @@
+#!/bin/bash
+URL=$1
+if [[ $URL =~ youtube ]]
+then
+	echo $URL >> ~/youtubesubs.m3u8
+else 
+	exec firefox $URL
+fi

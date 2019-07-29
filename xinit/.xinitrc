@@ -49,12 +49,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 compton -b & 
-lxqt-notificationd &
+dunst &
 ckb-next &
+urxvtd &
 steam &
 nextcloud &
 protonmail-bridge &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
-feh --bg-scale ~/Pictures/DTjS4mD.png &
+feh --bg-scale ~/Pictures/59bsn5hgnojy.jpg &
 pasystray &
 exec dwm
