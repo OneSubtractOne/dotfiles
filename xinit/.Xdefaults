@@ -2,7 +2,8 @@ URxvt*font: xft:meslolgl:size=12
 
 urxvt*depth: 32
 urxvt*background: rgba:0000/0000/0200/c800
-
+urxvt*scrollbar: false
+URxvt.scrollBar:           false
 ! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
 ! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
 
